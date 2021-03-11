@@ -1,0 +1,91 @@
+/*Estilos da página index.html*/
+.color{
+    color: brown;
+}
+.body{
+   background-color: linen;
+}
+.center{
+    text-align: center;
+}
+.justify{
+    text-align: justify;
+}
+.font{
+    font-family: verdana;
+}
+.shadow{
+    text-shadow: rgb(58, 55, 55) 0.1em 0.1em 0.2em;
+}
+.shadow2{
+    text-shadow: rgb(122, 101, 101) 0.1em 0.1em 0.2em;
+}
+.size{
+    font-size: 30pt;
+}
+.size2{
+    font-size: 10pt;
+}
+.sizebold{
+    font-size: 20px;
+    font-weight: bold;
+}
+.container{
+    display: flex;
+    flex-wrap: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+.containervideo{
+    align-items: center;
+}
+#menu li {
+    display: inline;
+    padding: 15px;
+   }
+#menu li a {
+    text-decoration: overline;
+    color: brown;
+    font-family: verdana;    
+    font-size: 12pt;
+}
+#menu li a:hover {
+    color: palevioletred;
+    background: url("https://i.servimg.com/u/f45/15/95/60/34/glitte10.gif");
+
+}
+.p-20{
+    padding: 20px;
+}
+.br-50{
+    border-radius: 50%;
+}
+.wh{
+    width: 400px;
+    height: 400px;
+}
+.tm-social {
+    width: 30px;
+    height: 30px;
+    padding: 10px;
+}
+.mb-50{
+    margin-bottom: 50px;
+}
+
+/*Estilos da página contato.html*/
+.ml-50{
+    margin-left: 50px;
+}
+
+.form-submit-button {
+
+    background: #a51a2c;
+    color: #fff;
+    border: 1px solid #eee;
+    border-radius: 30px;
+    box-shadow: 5px 5px 5px #eee;
+    text-shadow:none; 
+    font-family: verdana;    
+    font-size: 12pt;
+}
