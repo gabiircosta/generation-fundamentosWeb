@@ -4,20 +4,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="assets/CSS/style.css">
+    
 
     <title class="center font shadow2 color size">Contato</title>
 </head>
-<ul id="menu">
-    <li>
-        <a href="contato.html">Contato</a>
-    </li>
-     <li>
-        <a href="index.html">Home</a>
-    </li>
-</ul>
-
 <body class="body">
+    <ul id="menu" class="center">
+        <li>
+            <a href="index.html">
+                <img class="tm-home" src="assets/img/home.png" alt="Logo Home">
+                Home</a>
+        </li>
+         <li>
+            <a href="contato.html">
+                <img class="tm-home" src="assets/img/ctt.png" alt="Logo Contato">
+                Contato</a>
+        </li>
+    </ul>
+
+
     
     <h1 class="center font shadow2 color size">Bora conversar?</h1>
 
@@ -27,19 +33,22 @@
             <h2 class="font">Manda aí:</h2>
             <form action="">
                 <label for="Nome" class="font color">Nome:</label><br>
-                <input type="text" name="" id="">
-            <br>
+                <input type="text" name="" id="nome" onkeyup = "validaNome ()">
+                <div id='txtNome'></div>
+                <br>
             <br>
                 <label for="Email" class="font color">Email:</label><br>
-                <input type="email" name="" id="email">
+                <input type="email" name="" id="email" onkeyup="validaEmail ()">
+                <div id='txtEmail'></div>
             <br>
             <br>
                 <label for="Assunto" class="font color">Assunto:</label><br>
-                <textarea name="assunto" id="assunto" cols="60" rows="5"></textarea>
+                <textarea name="assunto" id="assunto" cols="60" rows="5" onkeyup="validaAssunto ()"></textarea>
+                <div id='txtAssunto'></div>
                 
             <br>
             <br>
-            <button class="form-submit-button">Pronto, falei!</button>
+            <button class="form-submit-button" onclick="enviar ()">Pronto, falei!</button>
         </div>
 
         <div class="ml-50">
@@ -47,7 +56,10 @@
             <p class="font">Alameda Vicente Pinzon, 54 - Vila Olímpia</p>
             <p class="font">São Paulo - Brasil</p>
             
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.215225419998!2d-46.689004785521206!3d-23.596612968779027!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce574e7a73d30d%3A0x862a31742765a371!2sCubo%20Ita%C3%BA!5e0!3m2!1spt-BR!2sbr!4v1615313153887!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.215225419998!2d-46.689004785521206!3d-23.596612968779027!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce574e7a73d30d%3A0x862a31742765a371!2sCubo%20Ita%C3%BA!5e0!3m2!1spt-BR!2sbr!4v1615313153887!5m2!1spt-BR!2sbr" 
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" 
+            onmousemove="mapaZoom()" onmouseout="mapaNormal()" id="mapa"></iframe>
             </form>
            
         </div>
@@ -77,5 +89,7 @@
         </p>
         
     </footer>
+
+    <script src="assets/JS/script.js"></script>
 </body>
 </html>
